@@ -1,0 +1,74 @@
+@import url("/style/font-family.css");
+body{
+    background-image: url("/img/31_minutos_background.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y:-10cm;
+}
+.logo_img{
+    width:80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    
+}
+.logo{
+    position: fixed;
+    width: 150px;
+    aspect-ratio: 1/1.3;
+    background-color: rgb(238, 201, 17);
+    top: 0px;
+    left: 100px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.222);
+}
+.title_wrapper{
+    position: absolute;
+    width: fit-content;
+    height: 300px;
+    left: 50%;
+    transform: translateX(-50%) scale(1.2);
+    animation: fade-in-top 1s ease-in-out;
+}
+button{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: "gutter-regular";
+    box-shadow: 10px 0px 5px rgba(0,0,0,0.2);
+}
+.startbtn{
+    background-color: rgb(50, 216, 50);
+}
+.joinbtn{
+    background-color: rgb(235, 59, 59);
+}
+.btn_grid{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+}
+.participants{
+    width: 100%;
+}
+tbody{
+    text-align: center;
+}
+.new_challenger{
+    animation: fade-in-top 1s ease-in-out;
+}
+@keyframes fade-in-top{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

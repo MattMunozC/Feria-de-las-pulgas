@@ -1,0 +1,33 @@
+@import url("/style/font-family.css");
+.modal{
+    font-family: "gutter-regular";
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 16/9;
+    left: 0px;
+    top:0px;
+    background-color: rgba(164, 240, 255, 0.6);
+}
+.modal_content{
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 255/256;
+    background-color: rgba(255, 255, 255, 0.8);
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-70%);
+    padding: 50px;
+    border-radius: 10px;
+    animation:pop-in 1s ease-in-out;
+}
+@keyframes pop-in {
+    0%{
+        transform: translate(-50%,-70%);
+        scale:0.5;
+    }
+    100%{
+        transform: translate(-50%,-70%);
+        scale:1;
+    }
+    
+}

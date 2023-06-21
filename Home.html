@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/home-screen.css">
+    <link rel="stylesheet" href="/style/modal.css">
+    <script src="/script/Homescreen.js" type="module"></script>
+
+    <title>Feria de las pulgas</title>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="/img/31_minutos_logo.png" class="logo_img" alt="logo">
+    </div>
+    <iframe class="title_wrapper" src="widget/title_frame.html" frameborder="0"></iframe>
+    <div class="btn_grid">
+        <button class="startbtn" id="start">Iniciar Partida</button>
+        <button class="joinbtn" id="join">Unirse a Partida</button>
+    </div>
+    <div class="modal" id="startGame" style="display: none;">
+        <div class="modal_content">
+            <div style="display: flex;">Codigo: <div id="code"></div></div>
+            <div style="background-color: blue;">
+                <table class="participants" id="match">
+                    <thead>
+                        <th>
+                            Icono
+                        </th>
+                        <th>
+                            Nombre
+                        </th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
